@@ -45,7 +45,7 @@ export const cleanState = (viewName: string): IAction<{ viewName }> => ({
 	payload: { viewName },
 });
 
-const dispatchUpdateAction = (viewName, event): IAction<IPayload> => ({
+export const dispatchUpdateAction = (viewName: string, event: ChangeEvent): IAction<IPayload> => ({
 	type: UPDATE_FORM_DATA_TO_REDUCER,
 	payload: {
 		viewName,
@@ -53,7 +53,7 @@ const dispatchUpdateAction = (viewName, event): IAction<IPayload> => ({
 	},
 });
 
-const dispatchErrorAction = (viewName, errorsList): IAction<IErrorPayload> => ({
+export const dispatchErrorAction = (viewName: string, errorsList: IListValidations[]): IAction<IErrorPayload> => ({
 	type: FORM_DATA_ERROR,
 	payload: {
 		viewName,
@@ -61,7 +61,7 @@ const dispatchErrorAction = (viewName, errorsList): IAction<IErrorPayload> => ({
 	},
 });
 
-export const dispatchInitialState = (viewName, initialState): IAction<IInitialStatePayload> => ({
+export const dispatchInitialState = (viewName: string, initialState: IListValidations[]): IAction<IInitialStatePayload> => ({
 	type: SET_INITIAL_STATE,
 	payload: {
 		viewName,
