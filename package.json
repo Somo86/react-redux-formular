@@ -37,7 +37,7 @@
     "@types/redux-actions": "2.3.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
-    "jest": "^23.6.0",
+    "jest": "^29.3.1",
     "prettier": "^1.15.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
